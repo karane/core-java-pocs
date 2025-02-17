@@ -29,6 +29,7 @@ public class MovieRentalWebsite {
         // Using Map: Get a list of movie titles
         List<String> movieTitles = movies.stream()
                                          .map(Movie::getTitle)
+                                         .map(title -> "\t" + title)
                                          .collect(Collectors.toList());
         
         System.out.println("\nAll Movie Titles:");
@@ -38,6 +39,7 @@ public class MovieRentalWebsite {
         List<String> highRatedMovies = movies.stream()
                                              .filter(movie -> movie.getRating() > 8.5)
                                              .map(Movie::getTitle)
+                                             .map(title -> "\t" + title)
                                              .collect(Collectors.toList());
         
         System.out.println("\nHighly Rated Movies (Rating > 8.5):");
@@ -47,6 +49,7 @@ public class MovieRentalWebsite {
         Movie[] movieArray = movies.toArray(new Movie[0]);
         System.out.println("\nMovie Array:");
         Arrays.stream(movieArray)
+                .map(movie -> "\t" + movie)
                 .forEach(System.out::println);
         
         // Supplier Example: Provide a default movie
@@ -58,7 +61,7 @@ public class MovieRentalWebsite {
         System.out.println("\nRandom Rating: " + randomRatingSupplier.getAsInt());
         
         // Consumer Example: Print movie details
-        Consumer<Movie> moviePrinter = movie -> System.out.println("Movie: " + movie.getTitle() + " (" + movie.getGenre() + ")");
+        Consumer<Movie> moviePrinter = movie -> System.out.println("\tMovie: " + movie.getTitle() + " (" + movie.getGenre() + ")");
         System.out.println("\nUsing Consumer to print movies:");
         movies.forEach(moviePrinter);
         
@@ -82,6 +85,7 @@ public class MovieRentalWebsite {
         System.out.println("\nGenres of Movies:");
         movies.stream()
                 .map(genreExtractor)
+                .map(g -> "\t" + g)
                 .forEach(System.out::println);
 
         // Using BiFunction to create a new Movie with modified rating
@@ -89,6 +93,7 @@ public class MovieRentalWebsite {
         System.out.println("\nMovies with modified ratings:");
         movies.stream()
                 .map(m -> modifyRating.apply(m, m.getRating() + 0.5))
+                .map(m -> "\t" + m.toString())
                 .forEach(System.out::println);
 
         // Collectors Example: Group movies by genre
