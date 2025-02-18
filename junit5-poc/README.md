@@ -1,14 +1,14 @@
-# 🏦 Bank JUnit 5 Testing Project
+# Bank JUnit 5 Testing Project
 A Maven-based Java project demonstrating JUnit 5 features using a Bank Account system.
 
 ## 📌 Features Covered
-✔️ Basic assertions (assertEquals, assertThrows)
-✔️ Parameterized Tests (@ValueSource, @CsvSource, @MethodSource)
-✔️ Lifecycle Methods (@BeforeEach, @AfterEach, @BeforeAll, @AfterAll)
-✔️ Nested Tests (@Nested)
-✔️ Conditional Execution (@EnabledOnOs, @EnabledOnJre)
-✔️ Timeout Tests (assertTimeout)
-✔️ Tagging Tests (@Tag)
+- ✔️ Basic assertions (assertEquals, assertThrows)
+- ✔️ Parameterized Tests (@ValueSource, @CsvSource, @MethodSource)
+- ✔️ Lifecycle Methods (@BeforeEach, @AfterEach, @BeforeAll, @AfterAll)
+- ✔️ Nested Tests (@Nested)
+- ✔️ Conditional Execution (@EnabledOnOs, @EnabledOnJre)
+- ✔️ Timeout Tests (assertTimeout)
+- ✔️ Tagging Tests (@Tag)
 
 ## 📂 Project Structure
 ```

@@ -2,17 +2,17 @@
 
 ## 📖 Overview
 This project demonstrates how to use Mockito for unit testing in a Java application. It covers key Mockito features such as:
-✅ Mocking dependencies (@Mock)
-✅ Stubbing method calls (when-thenReturn)
-✅ Verifying method interactions (verify(...))
-✅ Argument capturing (ArgumentCaptor)
-✅ Using spies (@Spy)
-✅ Handling exceptions (assertThrows)
-✅ Mocking static methods (mockStatic)
-✅ Mocking final classes & methods
-✅ Custom answers (thenAnswer)
-✅ Timeout verification (verify(...).timeout())
-✅ Resetting mocks (Mockito.reset())
+- ✅ Mocking dependencies (@Mock)
+- ✅ Stubbing method calls (when-thenReturn)
+- ✅ Verifying method interactions (verify(...))
+- ✅ Argument capturing (ArgumentCaptor)
+- ✅ Using spies (@Spy)
+- ✅ Handling exceptions (assertThrows)
+- ✅ Mocking static methods (mockStatic)
+- ✅ Mocking final classes & methods
+- ✅ Custom answers (thenAnswer)
+- ✅ Timeout verification (verify(...).timeout())
+- ✅ Resetting mocks (Mockito.reset())
 
 The example simulates a Bank Service, where:
 
