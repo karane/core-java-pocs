@@ -34,12 +34,12 @@ properties-api-poc/
 1. Clone the project.
 
 ```bash
-git clone https://github.com/yourusername/properties-api-example.git
+git clone https://github.com/karane/core-java-pocs.git
 ```
 
 2. Navigate to the project directory.
 ```bash
-cd properties-api-example
+cd properties-api-poc
 ```
 
 Build the project using Maven.
