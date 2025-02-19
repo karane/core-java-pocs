@@ -42,12 +42,12 @@ git clone https://github.com/karane/core-java-pocs.git
 cd properties-api-poc
 ```
 
-Build the project using Maven.
+3. Build the project using Maven.
 ```bash
 mvn clean install
 ```
 
-Run the PropertiesExample class.
+4. Run the PropertiesExample class.
 ```bash
 mvn exec:java -Dexec.mainClass="PropertiesExample"
 ```
