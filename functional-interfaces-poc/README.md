@@ -1,4 +1,4 @@
-# Java Functional Interfaces Demo
+# Java Functional Interfaces POC
 
 ## Overview
 This project demonstrates Java's built-in functional interfaces (`Consumer`, `BiConsumer`, `Supplier`) and custom functional interface (`TriConsumer`).
@@ -40,7 +40,7 @@ cd functional-interfaces-poc
 ## Running the Project
 Ensure you have **Maven** installed. Run the following commands:
 
-### Compile and Run
+### Compile
 ```sh
 mvn clean compile
 ```
