@@ -21,7 +21,7 @@ It includes examples for parsing, formatting, arithmetic operations, conversions
    ```
     **For Joda-Time (`org.joda.time`)**
     ```sh
-    mvn compile exec:java -Dexec.mainClass="org.karane.jodadate.JodaTimeDemo"
+    mvn compile exec:java -Dexec.mainClass="org.karane.JodaTimeDemo"
     ```
 ## Features Overview
 ### Java Time API (`java.time`)
